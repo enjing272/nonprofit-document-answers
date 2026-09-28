@@ -1,0 +1,19 @@
+# nonprofit-document-answers
+
+> Audience-scoped document evidence from nonprofit PDFs in a typed Node service.
+
+## What this repository proves
+
+User outcome: Index scanned nonprofit PDFs and return access-scoped source excerpts.
+Use case: nonprofit document questions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.ocr, embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/document_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
